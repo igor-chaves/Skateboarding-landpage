@@ -1,0 +1,148 @@
+/* WEBSITES FOR IMAGES:
+
+https://www.pngwing.com
+https://unsplash.com
+*/
+
+
+/* padding between sections 3rem */
+
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   list-style-type: none;
+}
+
+
+/* HEADER ---------------------------------------------------- HEADER */
+header {   
+   background-image: url(https://images.unsplash.com/photo-1536318431364-5cc762cfc8ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+
+   height: 600px;
+
+   display: flex;
+   justify-content: center;
+}
+
+.container-header {
+   margin: 0 30px;
+   width: 1200px;
+   
+   display: flex;
+   flex-direction: column;
+}
+
+
+/* NAV ---------------------------------------------------- NAV */
+nav {
+   border-bottom: 1px solid black;
+   padding: 30px 0;
+   
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.container-links {
+   display: flex;
+   gap: 40px;
+}
+
+
+/* HERO ---------------------------------------------------- HERO */
+.hero {
+   display: flex;
+   align-items: center;
+   flex-grow: 1;
+}
+
+.container-hero {
+   width: 50%;
+}
+
+
+/* FEATURED ---------------------------------------------------- FEATURED */
+.featured {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.featured > h2 {
+   margin: 3rem 30px 1.5rem;
+}
+
+.featured .container {
+   margin: 0 30px 1rem;
+   max-width: 1200px;
+
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+.card {
+   max-width: 300px;
+   margin-bottom: 2rem;
+
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.card img {
+   width: 300px;
+   height: 200px;
+   object-fit: cover;
+   border-radius: 10px;
+   margin-bottom: 10px;
+}
+
+
+/* COLLECTIONS ---------------------------------------------------- COLLECTIONS */
+.collections {
+   background-color: lightslategray;
+
+   display: flex;
+   justify-content: center;
+}
+
+.collections .container {
+   background-color: rgb(223, 223, 223);
+   border-radius: 20px;
+   margin: 3rem 30px;
+   padding: 2rem 1rem;
+   width: 100%;
+   max-width: 1200px;
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap-reverse;
+   gap: 20px;
+}
+.collections .image {
+   display: flex;
+   justify-content: center;
+   flex: 1;
+}
+
+.collections img {
+   max-width: 400px;
+}
+
+.collections .text {
+   padding-bottom: 30px;
+   min-width: 50%;
+
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+}
