@@ -264,7 +264,7 @@ nav a {
 }
 
 .newsletter .container {
-   margin: 3rem 30px;
+   margin: 4rem 30px;
    max-width: 1200px;
    text-align: center;
 
@@ -280,6 +280,7 @@ nav a {
 
 .newsletter .container button {
    padding: 1rem 2rem;
+   margin-left: 10px;
    background-color: lightgray;
 }
 
@@ -292,7 +293,7 @@ nav a {
 }
 
 .social-network .container {
-   padding: 2rem;
+   padding: 2rem 0;
    font-size: 1.25rem;
    margin: 0 30px;
    max-width: 1200px;
@@ -343,7 +344,7 @@ footer .container {
    max-width: 1200px;
 
    display: flex;
-   justify-content: left;
+   /* align-items: baseline; */
    flex-wrap: wrap;
    flex: 1;
    gap: 20px 10px;
@@ -369,7 +370,9 @@ footer .container .card a {
 }
 
 footer .container .card:nth-child(1) {
-   width: 350px;
+   width: 370px;
+   margin-right: 50px;
+
 }
 
 footer .container .card h2 {
