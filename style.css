@@ -151,6 +151,8 @@ nav {
 
 /* TESTIMONIALS ---------------------------------------------------- TESTIMONIALS */
 .testimonials {
+   background-color: lightslategray;
+
    display: flex;
    align-items: center;
    justify-content: center;
@@ -162,7 +164,7 @@ nav {
 }
 
 .testimonials .container {
-   padding: 0 30px 5rem;
+   margin: 0 30px 5rem;
    max-width: 1200px;
 
    display: flex;
@@ -172,7 +174,7 @@ nav {
 }
 
 .testimonials .container .card {
-   max-width: 350px;
+   width: 350px;
    border: 2px solid;
    padding: 20px;
 
@@ -194,4 +196,51 @@ nav {
 .testimonials .container .card .star-icons {
    margin: 10px 0 0;
    color: rgb(246, 246, 32);
+}
+
+
+/* NEW ARRIVALS ---------------------------------------------------- NEW ARRIVALS */
+.new-arrivals {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.new-arrivals > h2 {
+   margin: 4rem 30px 2rem;
+}
+
+.new-arrivals .container {
+   margin: 0 30px 5rem;
+   max-width: 1200px;
+
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+.new-arrivals .container .card {
+   width: 250px;
+   padding: 10px;
+   background-color: lightslategray;
+
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.new-arrivals .container .card img {
+   width: 100%;
+   height: 300px;
+   object-fit: cover;
+
+   display: flex;
+}
+
+.new-arrivals .container .card h3 {
+   margin: 10px 0;
 }
