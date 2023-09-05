@@ -8,12 +8,15 @@ https://unsplash.com
 /* padding between sections 4rem */
 /* gap between cards 20px */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
    text-decoration: none;
    list-style-type: none;
+   font-family: "Roboto";
 }
 
 
@@ -47,6 +50,11 @@ nav {
    display: flex;
    align-items: center;
    justify-content: space-between;
+}
+
+nav a {
+   color: black;
+   font-size: large;
 }
 
 .container-links {
@@ -273,4 +281,50 @@ nav {
 .newsletter .container button {
    padding: 1rem 2rem;
    background-color: lightgray;
+}
+
+
+/* SOCIAL NETWORKS ---------------------------------------------------- SOCIAL NETWORKS */
+.social-network {
+   display: flex;
+   justify-content: center;
+   background-color: lightslategray;
+}
+
+.social-network .container {
+   background-color: lightslategray;
+   padding: 20px;
+   font-size: large;
+   margin: 0 30px;
+   max-width: 1200px;
+
+   display: flex;
+   justify-content: space-between;
+   flex: 1;
+}
+
+.social-network .container .icons {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.social-network .container .icons li a {
+   margin-left: 40px;
+   color: rgb(223, 223, 223);
+}
+
+.social-network .container .icons li:nth-child(1) a:hover {
+   color: #1877F2;
+}
+
+.social-network .container .icons li:nth-child(2) a:hover {
+   color: black;
+}
+
+.social-network .container .icons li:nth-child(3) a:hover {
+   color: #E4405F;
+}
+
+.social-network .container .icons li:nth-child(4) a:hover {
+   color: #00C300;
 }
