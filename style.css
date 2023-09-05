@@ -224,8 +224,7 @@ nav {
 .new-arrivals .container .card {
    width: 250px;
    padding: 10px;
-   background-color: lightslategray;
-
+   background-color: rgb(223, 223, 223);
 
    display: flex;
    align-items: center;
@@ -243,4 +242,35 @@ nav {
 
 .new-arrivals .container .card h3 {
    margin: 10px 0;
+}
+
+
+/* NEWSLETTER ---------------------------------------------------- NEWSLETTER */
+.newsletter {
+   display: flex;
+   justify-content: center;
+}
+
+.newsletter > h2 {
+   margin: 4rem 30px 2rem;
+}
+
+.newsletter .container {
+   margin: 3rem 30px;
+   max-width: 1200px;
+   text-align: center;
+
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.newsletter .container input {
+   width: 450px;
+   padding: 1rem;
+}
+
+.newsletter .container button {
+   padding: 1rem 2rem;
+   background-color: lightgray;
 }
