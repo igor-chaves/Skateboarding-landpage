@@ -21,7 +21,7 @@ https://unsplash.com
 
 
 /* HEADER ---------------------------------------------------- HEADER */
-header {   
+header {
    background-image: url(https://images.unsplash.com/photo-1536318431364-5cc762cfc8ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80);
    background-repeat: no-repeat;
    background-position: center;
@@ -39,6 +39,10 @@ header {
    
    display: flex;
    flex-direction: column;
+}
+
+.container-header span {
+   color: rgb(223, 223, 223);
 }
 
 
@@ -79,15 +83,12 @@ nav a {
 .featured {
    display: flex;
    align-items: center;
-   flex-direction: column;
+   justify-content: center;
 }
 
-.featured > h2 {
-   margin: 4rem 30px 2rem;
-}
 
 .featured .container {
-   margin: 0 30px 5rem;
+   margin: 6rem 30px;
    max-width: 1200px;
 
    display: flex;
@@ -96,21 +97,31 @@ nav a {
    gap: 20px;
 }
 
+.featured .container > div {
+   display: flex;
+   gap: 20px;
+}
+
 .featured .container .card {
-   margin-bottom: 2rem;
-   max-width: 300px;
+   border-right: 1px solid;
+   border-left: 1px solid;
+   border-radius: 10px;
+   padding: 30px 15px;
+   max-width: 250px;
+   height: 150px;
 
    display: flex;
-   align-items: center;
+   justify-content: center;
    flex-direction: column;
 }
 
-.featured .container .card img {
-   width: 300px;
-   height: 200px;
-   object-fit: cover;
-   border-radius: 10px;
-   margin-bottom: 10px;
+.featured .container .card:hover {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   background-color: rgb(237, 237, 237);
+}
+
+.featured .container .card h2 {
+   margin-bottom: 15px;
 }
 
 
@@ -123,8 +134,9 @@ nav a {
 }
 
 .collections .container {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    background-color: rgb(223, 223, 223);
-   border-radius: 20px;
+   border-radius: 10px;
    margin: 5rem 30px;
    padding: 2rem 1rem;
    width: 100%;
@@ -145,15 +157,31 @@ nav a {
 
 .collections img {
    max-width: 400px;
+   width: 100%;
 }
 
 .collections .text {
-   padding-bottom: 30px;
    min-width: 50%;
 
    display: flex;
    flex-direction: column;
+   gap: 10px;
    flex: 1;
+}
+
+.collections .text a {
+   display: inline-block;
+   padding: 1rem 2rem;
+   background-color: lightgray;
+   border: 2px solid;
+   color: black;
+   font-weight: bold;
+   margin: 0 5px;
+}
+
+.collections .btns {
+   display: flex;
+   margin: 0 -4px;
 }
 
 
@@ -182,7 +210,8 @@ nav a {
 }
 
 .testimonials .container .card {
-   width: 350px;
+   max-width: 350px;
+   height: 170px;
    border: 2px solid;
    padding: 20px;
 
@@ -216,7 +245,11 @@ nav a {
 }
 
 .new-arrivals > h2 {
-   margin: 4rem 30px 2rem;
+   margin: 4rem 30px 10px;
+}
+
+.new-arrivals > p {
+   margin: 0 30px 2rem;
 }
 
 .new-arrivals .container {
@@ -264,8 +297,8 @@ nav a {
 }
 
 .newsletter .container {
-   margin: 4rem 30px;
    max-width: 1200px;
+   margin: 4rem 30px;
    text-align: center;
 
    display: flex;
@@ -274,20 +307,31 @@ nav a {
 }
 
 .newsletter .container input {
-   width: 450px;
+   max-width: 450px;
+   width: 100%;
    padding: 1rem;
 }
 
-.newsletter .container button {
+.newsletter .container div {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+}
+
+.newsletter .container a {
    padding: 1rem 2rem;
-   margin-left: 10px;
    background-color: lightgray;
+   color: black;
+   font-weight: bold;
+   width: 40%;
 }
 
 
 /* SOCIAL NETWORKS ---------------------------------------------------- SOCIAL NETWORKS */
 .social-network {
    background-color:  rgb(223, 223, 223);
+   
    display: flex;
    justify-content: center;
 }
@@ -297,15 +341,17 @@ nav a {
    font-size: 1.25rem;
    margin: 0 30px;
    max-width: 1200px;
+   width: 100%;
 
    display: flex;
+   align-items: center;
    justify-content: space-between;
+   flex-wrap: wrap;
    flex: 1;
 }
 
 .social-network .container .icons {
    display: flex;
-   justify-content: flex-end;
 }
 
 .social-network .container .icons li a {
@@ -335,26 +381,36 @@ footer {
    background-color: lightslategray;
    
    display: flex;
-   align-items: center;
-   flex-direction: column;
+   justify-content: center;
 }
 
 footer .container {
    margin: 3rem 30px;
    max-width: 1200px;
+   width: 100%;
 
    display: flex;
-   /* align-items: baseline; */
+   justify-content: flex-start;
    flex-wrap: wrap;
    flex: 1;
-   gap: 20px 10px;
+   gap: 40px 0;
 }
 
 footer .container .card {
-   width: 250px;
+   max-width: 250px;
+   width: 100%;
 
    display: flex;
    flex-direction: column;
+}
+
+footer .container .card:nth-child(1) {
+   max-width: 370px;
+   width: 100%;
+}
+
+footer .container span {
+   color: rgb(223, 223, 223);
 }
 
 footer .container .card ul {
@@ -369,14 +425,8 @@ footer .container .card a {
    color: black;
 }
 
-footer .container .card:nth-child(1) {
-   width: 370px;
-   margin-right: 50px;
-
-}
-
 footer .container .card h2 {
-   margin-bottom: 30px;
+   margin-bottom: 10px;
 }
 
 footer .container .card.contact li a {
@@ -387,10 +437,73 @@ footer .container .card.contact li i {
    color: rgb(223, 223, 223);
 }
 
-footer .copyright {
+
+/* ASIDE ---------------------------------------------------- ASIDE */
+aside .copyright {
    background-color: rgb(91, 106, 120);
    padding: 1rem;
-   margin: 0 30px;
-   width: 100%;
    text-align: center;
+}
+
+
+/* MEDIA QUERIES ---------------------------------------------------- MEDIA QUERIES */
+@media (max-width: 690px) {
+   /* HEADER */
+   .container-header nav ul {
+      display: none;
+   }
+   .container-hero h1 {
+      font-size: 1.5rem;
+   }
+
+   /* COLLECTIONS */
+   .collections .container {
+      flex-direction: column;
+   }
+   .collections .text {
+      text-align: center;
+      gap: 10px;
+   }
+   .collections h2 {
+      font-size: 1.25rem;
+   }
+   .collections .text a {
+      padding: .5rem 1rem;
+      margin: 0 5px;
+   }
+   .collections .btns {
+      justify-content: center;
+   }
+
+   /* TESTIMONIALS */
+   .testimonials .container .card {
+      flex-direction: column;
+      height: 250px;
+   }
+   .testimonials .container .card .text{
+      text-align: center;
+   }
+
+   /* SOCIAL NETWORK */
+   .social-network .container {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 15px;
+   }
+   .social-network .container .icons {
+      line-height: 1rem;
+   }
+   .social-network .container .icons li:first-child a {
+      margin-left: 0;
+   }
+}
+
+@media (max-width: 460px) {
+   .newsletter .container div {
+      flex-wrap: wrap;
+   }
+   .newsletter .container a {
+      width: 50%;
+   }
 }
