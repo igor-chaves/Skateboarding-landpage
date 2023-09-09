@@ -56,14 +56,35 @@ nav {
    justify-content: space-between;
 }
 
-nav a {
-   color: black;
-   font-size: large;
-}
-
 .container-links {
    display: flex;
    gap: 40px;
+}
+
+nav a {
+   color: black;
+   font-size: large;
+   border-top: 2px solid transparent;
+   border-bottom: 2px solid transparent;
+   padding: 5px 0;
+}
+
+nav a:hover {
+   border-bottom: 2px solid white;
+}
+
+nav .favorite-icon:hover {
+   color: red;
+}
+
+nav .menu-icon {
+   display: none;
+   font-size: 1.5rem;
+   cursor: pointer;
+}
+
+nav .menu-icon:hover {
+   color: white;
 }
 
 
@@ -71,13 +92,30 @@ nav a {
 .hero {
    display: flex;
    align-items: center;
-   flex-grow: 1;
+   flex: 1;
 }
 
-.container-hero {
+.hero .container-hero {
    width: 50%;
+   
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   flex: 1;
 }
 
+.hero .container-hero > div {
+   display: flex;
+}
+
+.hero .container-hero a {
+   margin-top: 10px;
+   padding: 1rem 2rem;
+   background-color: lightgray;
+   border: 2px solid;
+   color: black;
+   font-weight: bold;
+}
 
 /* FEATURED ---------------------------------------------------- FEATURED */
 .featured {
@@ -99,15 +137,17 @@ nav a {
 
 .featured .container > div {
    display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
    gap: 20px;
 }
 
 .featured .container .card {
-   border-right: 1px solid;
-   border-left: 1px solid;
+   /* border-right: 1px solid;
+   border-left: 1px solid; */
    border-radius: 10px;
    padding: 30px 15px;
-   max-width: 250px;
+   width: 250px;
    height: 150px;
 
    display: flex;
@@ -116,7 +156,7 @@ nav a {
 }
 
 .featured .container .card:hover {
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    background-color: rgb(237, 237, 237);
 }
 
@@ -169,6 +209,11 @@ nav a {
    flex: 1;
 }
 
+.collections .btns {
+   display: flex;
+   margin: 0 -4px;
+}
+
 .collections .text a {
    display: inline-block;
    padding: 1rem 2rem;
@@ -179,10 +224,7 @@ nav a {
    margin: 0 5px;
 }
 
-.collections .btns {
-   display: flex;
-   margin: 0 -4px;
-}
+
 
 
 /* TESTIMONIALS ---------------------------------------------------- TESTIMONIALS */
@@ -451,6 +493,9 @@ aside .copyright {
    /* HEADER */
    .container-header nav ul {
       display: none;
+   }
+   .container-header nav .menu-icon {
+      display: block;
    }
    .container-hero h1 {
       font-size: 1.5rem;
