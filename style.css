@@ -35,28 +35,48 @@ header {
 
 .container-header {
    margin: 0 30px;
-   width: 1200px;
+   max-width: 1200px;
+   width: 100%;
    
    display: flex;
    flex-direction: column;
 }
 
-.container-header span {
-   color: rgb(223, 223, 223);
+.container-header .logo {
+   font-size: 2rem;
 }
 
 
 /* NAV ---------------------------------------------------- NAV */
 nav {
    border-bottom: 1px solid black;
-   padding: 30px 0;
-   
+   width: 1200px;
+   padding: 15px 30px;
+
    display: flex;
    align-items: center;
    justify-content: space-between;
+
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: white;
+   z-index: 1000;
 }
 
-.container-links {
+nav .logo {
+   font-size: 2rem;
+}
+
+nav .dot {
+   color: lightslategray;
+   font-size: 4rem;
+   /* line bellow prevent to create unnecessary big spaces around "skateboard." */
+   line-height: 0;
+}
+
+nav .container-links {
    display: flex;
    gap: 40px;
 }
@@ -70,7 +90,7 @@ nav a {
 }
 
 nav a:hover {
-   border-bottom: 2px solid white;
+   border-bottom: 2px solid lightslategray;
 }
 
 nav .favorite-icon:hover {
@@ -84,7 +104,7 @@ nav .menu-icon {
 }
 
 nav .menu-icon:hover {
-   color: white;
+   color: lightslategray;
 }
 
 
@@ -96,8 +116,6 @@ nav .menu-icon:hover {
 }
 
 .hero .container-hero {
-   width: 50%;
-   
    display: flex;
    flex-direction: column;
    gap: 10px;
@@ -453,6 +471,7 @@ footer .container .card:nth-child(1) {
 
 footer .container span {
    color: rgb(223, 223, 223);
+   font-size: 3rem;
 }
 
 footer .container .card ul {
