@@ -97,14 +97,45 @@ nav .favorite-icon:hover {
    color: red;
 }
 
-nav .menu-icon {
+nav .menu-icon, nav .menu-close-icon {
    display: none;
    font-size: 1.5rem;
    cursor: pointer;
 }
 
-nav .menu-icon:hover {
+nav .menu-icon:hover, .menu-close-icon:hover {
    color: lightslategray;
+}
+
+
+/* MENU HAMBURGUER ---------------------------------------------------- MENU HAMBURGUER */
+.container-links-menu.active {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 999;
+
+   background-color: lightslategray;
+   min-height: 100vh;
+   width: 100%;
+   padding-top: 85px;
+   
+   display: flex;
+   flex-direction: column;
+}
+
+.container-links-menu.active li {
+   margin: 25px 0;
+   text-align: center;
+}
+
+.container-links-menu.active li a {
+   color: lightgray;
+   font-size: 2rem;
+}
+
+.container-links-menu.active .favorite-icon:hover {
+   color: red;
 }
 
 
@@ -372,19 +403,27 @@ nav .menu-icon:hover {
    padding: 1rem;
 }
 
-.newsletter .container div {
+.newsletter .container form {
    display: flex;
    align-items: center;
    justify-content: center;
    gap: 10px;
 }
 
-.newsletter .container a {
+.newsletter .container button {
    padding: 1rem 2rem;
    background-color: lightgray;
+   border: 2px solid lightgray;
    color: black;
    font-weight: bold;
    width: 40%;
+
+   cursor: pointer;
+}
+
+.newsletter .container button:hover {
+   background-color: rgb(196, 196, 196);
+   border: 2px solid rgb(196, 196, 196);
 }
 
 
@@ -516,8 +555,13 @@ aside .copyright {
    .container-header nav .menu-icon {
       display: block;
    }
+
    .container-hero h1 {
       font-size: 1.5rem;
+   }
+
+   .container-links-menu.active {
+      display: block;
    }
 
    /* COLLECTIONS */
