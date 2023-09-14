@@ -17,6 +17,7 @@ https://unsplash.com
    text-decoration: none;
    list-style-type: none;
    font-family: "Roboto";
+   outline-color: black;
 }
 
 
@@ -27,7 +28,7 @@ header {
    background-position: center;
    background-size: cover;
 
-   height: 600px;
+   min-height: 600px;
 
    display: flex;
    justify-content: center;

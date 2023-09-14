@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="contact.css">
+   <link rel="stylesheet" href="style.css">
+   
+   <!-- FONTAWESOME icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+   <title>Skateboard. Contact</title>
+</head>
+<body>
+   <header>
+      <div class="container-header">
+         <!-- NAVIGATION -->
+         <nav>
+            <a href="#" class="logo">SKATEBOARD<span class="dot">.</span></a>
+            <ul class="container-links">
+               <li><a href="#">Home</a></li>
+               <li><a href="#newsletter">Contact</a></li>
+               <li><a href="#"><i class="fa-solid fa-heart favorite-icon"></i> Favorite</a></li>
+               <li><a href="#"><i class="fa-solid fa-cart-shopping cart-icon"></i>  Cart</a></li>
+            </ul>
+            <i id="menu" class="fa-solid fa-bars menu-icon"></i>
+            <i id="close-menu" class="fa-solid fa-xmark menu-close-icon"></i>
+         </nav>
+
+         <div>
+            <ul id="menu-active" class="container-links-menu">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Contact</a></li>
+               <li><a href="#"><i class="fa-solid fa-heart favorite-icon"></i> Favorite</a></li>
+               <li><a href="#"><i class="fa-solid fa-cart-shopping cart-icon"></i>  Cart</a></li>
+            </ul>
+         </div>     
+         
+         <!-- FORM -->
+         <div class="container flex">
+            <form>
+               <div class="form-top">
+                  <h1>CONTACT</h1>
+               </div>
+   
+               <div id="contact-form-inputs" class="form-mid">
+                  <input id="name" type="text" placeholder="Full name" autocomplete="off" required>
+                  <input id="email" type="email" placeholder="E-mail" autocomplete="off" required>
+                  <textarea id="message" placeholder="Your message" rows="4" col="4" maxlength="200" autocomplete="off" required></textarea>
+               </div>
+
+               <div class="send-btn flex">
+                  <button type="submit">Send</button>
+               </div>
+            </form>
+         </div>
+   </header>
+
+   <footer>
+      <div class="container">
+         <div class="card">
+            <h2>SKATEBOARD<span>.</span></h2>
+            <p>Your trusted online store. Quality, speed, and exceptional service. Free shipping inside Japan only.</p>
+         </div>
+
+         <div class="card">
+            <h2>PRODUCTS</h2>
+            <ul>
+               <li><a href="#">Shirts</a></li>
+               <li><a href="#">Shoes</a></li>
+               <li><a href="#">Shapes</a></li>
+               <li><a href="#">Caps</a></li>
+            </ul>
+         </div>
+
+         <div class="card">
+            <h2>USEFUL LINKS</h2>
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Contact</a></li>
+               <li><a href="#">Favorites</a></li>
+               <li><a href="#">Cart</a></li>
+            </ul>
+         </div>
+         
+         <div class="card contact">
+            <h2>CONTACT</h2>
+            <ul>
+               <li><i class="fa-solid fa-house"></i><a href="#">Tokyo, Shibuya-ku, 2-1-2</a></li>
+               <li><i class="fa-solid fa-envelope"></i><a href="#">contact@skateboard.co.jp</a></li>
+               <li><i class="fa-solid fa-phone"></i><a href="#">090-1234-5678</a></li>
+            </ul>
+         </div>
+      </div>
+   </footer>
+
+   <aside>
+      <div class="copyright">
+         <p>&copy; 2023 Copyright</p>
+      </div>   
+   </aside>
+
+   <script src="./contact.js"></script>
+</body>
+</html>
