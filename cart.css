@@ -1,0 +1,88 @@
+.header-cart {
+   background-image: none;
+}
+
+.banner-free-shipping {
+   background-color: lightgray;
+   padding: 2rem;
+   text-align: center;
+   font-size: 1.35rem;
+}
+
+.product .container {
+   display: flex;
+   flex-direction: column;
+}
+
+.container .titles {
+   display: flex;
+   justify-content: space-between;
+}
+
+.product-container {
+   display: flex;
+   gap: 20px;
+}
+
+.product-infos {
+   background-color: lightseagreen;
+   display: flex;
+   justify-content: space-between;
+}
+
+.product-infos img {
+   width: 150px;
+}
+
+.quantity {
+   display: flex;
+}
+
+/* COUPON SECTION */
+.coupon {
+   display: flex;
+   padding: 1.5rem 0;
+   border-top: 2px solid black;
+   border-bottom: 2px solid black;
+}
+
+.coupon input {
+   max-width: 300px;
+   width: 100%;
+   padding: .5rem;
+   margin-right: .5rem;
+}
+
+.coupon button {
+   width: 100px;
+   padding: .5rem;
+}
+
+/* CHECKOUT SECTION */
+.checkout {
+   background-color: aquamarine;
+   min-width: 50%;
+   margin-bottom: 4rem;
+   padding: 1rem;
+
+   display: flex;
+   align-self: flex-end;
+   flex-direction: column;
+}
+
+.checkout-top, .checkout-bottom  {
+   display: flex;
+   flex-direction: column;
+}
+
+.checkout-top {
+   border-bottom: 2px solid black;
+}
+.checkout div {
+   display: flex;
+   justify-content: flex-end;
+}
+.checkout p, .checkout button, .checkout a {
+   /* margin-top: 2rem; */
+   margin-left: 10rem;
+}
