@@ -12,20 +12,21 @@
    <title>Skateboard. Cart</title>
 </head>
 <body>
+   <!-- NAVIGATION -->
+   <nav id="top-navbar">
+      <a href="#" class="logo">SKATEBOARD<span class="dot">.</span></a>
+      <ul class="container-links">
+         <li><a href="#">Home</a></li>
+         <li><a href="#newsletter">Contact</a></li>
+         <li><a href="#"><i class="fa-solid fa-heart favorite-icon"></i> Favorite</a></li>
+         <li><a href="#"><i class="fa-solid fa-cart-shopping cart-icon"></i>  Cart</a></li>
+      </ul>
+      <i id="menu" class="fa-solid fa-bars menu-icon"></i>
+      <i id="close-menu" class="fa-solid fa-xmark menu-close-icon"></i>
+   </nav>
+
    <header class="header-cart">
       <div class="container-header">
-         <!-- NAVIGATION -->
-         <nav>
-            <a href="#" class="logo">SKATEBOARD<span class="dot">.</span></a>
-            <ul class="container-links">
-               <li><a href="#">Home</a></li>
-               <li><a href="#newsletter">Contact</a></li>
-               <li><a href="#"><i class="fa-solid fa-heart favorite-icon"></i> Favorite</a></li>
-               <li><a href="#"><i class="fa-solid fa-cart-shopping cart-icon"></i>  Cart</a></li>
-            </ul>
-            <i id="menu" class="fa-solid fa-bars menu-icon"></i>
-            <i id="close-menu" class="fa-solid fa-xmark menu-close-icon"></i>
-         </nav>
 
          <div>
             <ul id="menu-active" class="container-links-menu">
@@ -127,79 +128,6 @@
             </div>
          </div>
      </div>
-             
-
-         <!-- <div class="product">
-            <div class="container">
-               <ul class="titles">
-                  <li>Item</li>
-                  <li>Quantity</li>
-                  <li>Price</li>
-                  <li>Total Price</li>
-                  <li>Delete</li>
-               </ul>
-
-               <div class="product-infos">
-                  <div class="product-container">
-                     <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1600574691453-499962cc0611?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80" alt="product-img">
-                     </div>
-                     <div class="product-details">
-                        <p>Product name #01</p>
-                        <p>Color: pink</p>
-                        <p>Size: 4</p>
-                     </div>
-                  </div>
-                  <div class="quantity">
-                     <button>+</button>
-                     <p>1</p>
-                     <button>-</button>
-                  </div>
-                  <div class="price">
-                     <p>$89</p>
-                  </div>
-                  <div class="total-price">
-                     <p>$91</p>
-                  </div>
-                  <div class="deleteProduct">
-                     <button>X</button>
-                  </div>
-               </div>
-
-               <form class="coupon">
-                  <input type="text">
-                  <button type="submit">Apply</button>
-               </form>
-
-               <div class="checkout">
-                     <div class="checkout-top">
-                        <div>
-                           <p>Subtotal</p>
-                           <p>$91</p>
-                        </div>
-                        <div>
-                           <p>Shipping*</p>
-                           <p>free</p>
-                        </div>
-                        <div>
-                           <p>Taxes</p>
-                           <p>$3</p>
-                        </div>
-                     </div>
-
-                     <div class="checkout-bottom">
-                        <div>
-                           <p>Estimated total</p>
-                           <p>$99 USD</p>
-                        </div>
-                        <div>
-                           <a href="#">Continue Shopping</a>
-                           <button>Checkout</button>
-                        </div>
-                     </div>
-               </div>
-            </div>
-         </div> -->
       </div>
 
    </header>
@@ -249,5 +177,6 @@
       </div>   
    </aside>
 
+   <script src="./app.js"></script>
 </body>
 </html>

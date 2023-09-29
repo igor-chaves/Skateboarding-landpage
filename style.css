@@ -58,7 +58,7 @@ nav {
    align-items: center;
    justify-content: space-between;
 
-   position: fixed;
+   position: sticky;
    top: 0;
    left: 0;
    width: 100%;
@@ -553,14 +553,15 @@ aside .copyright {
 
 /* MEDIA QUERIES ---------------------------------------------------- MEDIA QUERIES */
 @media (max-width: 690px) {
-   /* HEADER */
-   .container-header nav ul {
+   /* before HEADER */
+   nav .container-links {
       display: none;
    }
-   .container-header nav .menu-icon {
+   nav .menu-icon {
       display: block;
    }
 
+   /* HEADER */
    .container-hero h1 {
       font-size: 1.5rem;
    }
