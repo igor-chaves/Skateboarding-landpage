@@ -110,6 +110,10 @@ nav .menu-icon:hover, .menu-close-icon:hover {
 
 
 /* MENU HAMBURGUER ---------------------------------------------------- MENU HAMBURGUER */
+.container-links-menu {
+   display: none;
+}
+
 .container-links-menu.active {
    position: fixed;
    top: 0;
