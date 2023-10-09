@@ -1,4 +1,12 @@
 const productsContainer = document.querySelector(".products-container")
+const subTotal = document.querySelector(".sub-total")
+const orderTotal = document.querySelector(".order-total")
+
+let totalPriceLocalStorage = parseFloat(localStorage.getItem("totalPrice")) || 0
+
+let subTotalPrice = parseFloat(subTotal.textContent)
+let orderTotalPrice = parseFloat(orderTotal.textContent)
+
 
 const deleteProduct = e => {
    if (e.target.classList.contains ("delete-btn")) {
@@ -7,13 +15,13 @@ const deleteProduct = e => {
    }
 }
 
-const addItem = e => {   
+const addItem = e => {
    if (e.target.classList.contains("plus-btn")) {
       const quantityItem = e.target.nextElementSibling
       // priceItem gets the element <p class="item-price" value="104">104</p>
       const priceItem = quantityItem.parentElement.nextElementSibling.lastElementChild
 
-      let currentQuantity = parseInt(quantityItem.textContent)
+      let currentQuantity = parseFloat(quantityItem.textContent)
       // currentPrice gets the number in value by default, 104
       let currentPrice = priceItem.getAttribute("value")
 
@@ -21,6 +29,11 @@ const addItem = e => {
 
       quantityItem.textContent = currentQuantity
       priceItem.textContent = currentPrice * currentQuantity
+
+      let a = currentPrice * currentQuantity
+
+      totalPriceLocalStorage += a
+      localStorage.setItem("totalPrice", totalPriceLocalStorage)
    }
 }
 
